@@ -1,4 +1,24 @@
-# dlib C++ library [![Travis Status](https://travis-ci.org/davisking/dlib.svg?branch=master)](https://travis-ci.org/davisking/dlib)
+# DLib build with Android
+
+Docker上のubuntuでDLibのarmビルドしてAndroidで使える状態にしたもの
+ubuntu上にログインし、makeを実行する
+
+```
+./docker.sh pull
+./docker.sh run
+./docker.sh exec
+```
+
+dockerにログイン後
+
+```
+sh cmake_init.sh
+sh cmake_android.sh
+```
+
+## original
+
+## dlib C++ library [![Travis Status](https://travis-ci.org/davisking/dlib.svg?branch=master)](https://travis-ci.org/davisking/dlib)
 
 Dlib is a modern C++ toolkit containing machine learning algorithms and tools for creating complex software in C++ to solve real world problems. See [http://dlib.net](http://dlib.net) for the main project documentation and API reference.
 
